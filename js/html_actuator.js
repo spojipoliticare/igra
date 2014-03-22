@@ -131,7 +131,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "Jej, pobjeda!" : "Kraj igre!";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -155,13 +155,13 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "gabrielecirulli");
-  tweet.setAttribute("data-url", "http://git.io/2048");
-  tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
+  tweet.setAttribute("data-via", "spojipoliticare");
+  tweet.setAttribute("data-url", "http://git.io/djKgDQ");
+  tweet.setAttribute("data-counturl", "http://spojipoliticare.github.io/igra/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048, a game where you " +
-             "join numbers to score high! #2048game";
+  var text = "Gle, imam " + this.score + " bodova u igri spoji politicare, igra u kojoj " +
+             "spajas politicare! #spojipoliticare";
   tweet.setAttribute("data-text", text);
 
   return tweet;
