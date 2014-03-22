@@ -8,9 +8,9 @@ Napravljeno za zabavu. [Igraj ovjde!](http://spojipoliticare.github.io/igra/)
 ### O originalu:
 
 Github: https://github.com/gabrielecirulli/2048/
+
 [Igraj ovdje!](http://gabrielecirulli.github.io/2048/)
 
-## Donacije
 BTC adresa autora originala (2048 igre): `1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i`.
 
 ## License
