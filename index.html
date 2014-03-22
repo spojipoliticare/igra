@@ -2,7 +2,7 @@
 <html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>Spoji političare</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -14,21 +14,21 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-  <meta property="og:title" content="2048 game"/>
-  <meta property="og:site_name" content="2048 game"/>
+  <meta property="og:title" content="Spoji političare"/>
+  <meta property="og:site_name" content="Spoji političare"/>
   <meta property="og:description" content="Spoji političare! Oprez: ova igra je jako zarazna!"/>
-  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+  <meta property="og:image" content="http://spojipoliticare.github.io/igra/meta/og_image.png"/>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">Političari</h1>
+      <h1 class="title">Spoji političare</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Spoji političare i dođi do <strong>koga?</strong></p>
+    <p class="game-intro">Spoji političare i dođi do <strong>hm koga?</strong></p>
 
     <div class="game-container">
       <div class="game-message">
@@ -73,32 +73,25 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">Kako igrati:</strong> Koristi <strong>tipke sa strelicama</strong> da se političari pomaknu. Kad se dva ista političara dotaknu, oni se <strong>spoje u jednog!</strong>
+      <strong class="important">Kako igrati:</strong> Koristi <strong>tipke sa strelicama</strong> za pomicanje političara. Kad se dva ista političara dotaknu, <strong>spoje se u jednog!</strong> Jej!
     </p>
     <hr>
     <p>
-    <strong class="important">Napomena:</strong> Autor originalne igre na kojoj je ova igra bazirana je <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a>. Original je dostupan <a href="http://gabrielecirulli.github.io/2048/">ovdje</a>.
+    <strong class="important">Napomena:</strong> Autor originalne igre (2048) na kojoj je ova igra bazirana je <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>. Original je dostupan <a href="http://gabrielecirulli.github.io/2048/">ovdje</a>. U ovoj su verziji samo brojevi zamijenjeni sa slikama, nema tu velike mudrosti.
     </p>
     <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
     <div class="sharing">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048, a game where you join numbers to score high! #2048game" data-via="gabrielecirulli" data-url="http://git.io/2048" data-counturl="http://gabrielecirulli.github.io/2048/">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-      <form class="pp-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="NVNPJLTBZ8AME">
-        <button name="submit"><img src="meta/icon_pp.svg">Donate</button>
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-
       <span class="btc-donate">
         <a href="bitcoin:1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i">
-          <img src="meta/icon_bitcoin.svg">Donate BTC
+          <img src="meta/icon_bitcoin.svg">Doniraj BTC autoru originala!
         </a>
         <span class="address"><code>1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i</code></span>
+      </span></br></br>
+      <span class="btc-donate">
+        <a href="bitcoin:1HisAZEx2ad5wTXsGGRzVCeCrpPNCmY1XP">
+          <img src="meta/icon_bitcoin.svg">Ili pak doniraj BTC autoru ove verzije!
+        </a>
+        <span class="address"><code>1HisAZEx2ad5wTXsGGRzVCeCrpPNCmY1XP</code></span>
       </span>
 
     </div>
@@ -114,13 +107,13 @@
   <script src="js/application.js"></script>
 
   <script>
-    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga("create", "UA-42620757-2", "gabrielecirulli.github.io");
-    ga("send", "pageview");
+    ga('create', 'UA-49276904-1', 'spojipoliticare.github.io');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>
