@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spoji politicare</string>
+    <string name="action_settings">Postavke</string>
+    <string name="press_back_again_to_exit">Pritisni jos jednom za izlaz</string>
+
+</resources>
