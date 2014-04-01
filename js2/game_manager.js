@@ -60,6 +60,15 @@ GameManager.prototype.addStartTiles = function () {
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var value = Math.random() < 0.9 ? 2 : 4;
+
+    if (Math.random() > 0.94) {
+      value = 128;
+    }
+
+    if (Math.random() > 0.97) {
+      value = 256;
+    }
+
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
@@ -68,12 +77,12 @@ GameManager.prototype.addRandomTile = function () {
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
-  if (this.scoreManager.get() < this.score) {
-    this.scoreManager.set(this.score);
+  if (this.scoreManager.get() > -1 * this.score) {
+    this.scoreManager.set(-1 * this.score);
   }
 
   this.actuator.actuate(this.grid, {
-    score:      this.score,
+    score:      -1 * this.score,
     over:       this.over,
     won:        this.won,
     bestScore:  this.scoreManager.get(),
@@ -167,10 +176,10 @@ GameManager.prototype.move = function (direction) {
 GameManager.prototype.getVector = function (direction) {
   // Vectors representing tile movement
   var map = {
-    0: { x: 0,  y: -1 }, // up 0 -1
-    1: { x: 1,  y: 0 },  // right 1 0
-    2: { x: 0,  y: 1 },  // down 0 1
-    3: { x: -1, y: 0 }   // left -1 0
+    0: { x: 0,  y: 1 }, // up 0 -1
+    1: { x: -1,  y: 0 },  // right 1 0
+    2: { x: 0,  y: -1 },  // down 0 1
+    3: { x: 1, y: 0 }   // left -1 0
   };
 
   return map[direction];
